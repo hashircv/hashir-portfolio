@@ -1,0 +1,1 @@
+Add Mohammed Hashir C V's resume as public/resume.pdf, then update src/data/profile.ts.

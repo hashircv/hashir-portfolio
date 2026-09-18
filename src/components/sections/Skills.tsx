@@ -1,0 +1,5 @@
+import { skills } from '../../data/skills';
+import type { SkillCategory } from '../../types/portfolio';
+import { Badge } from '../ui/Badge'; import { Card } from '../ui/Card'; import { Section } from '../ui/Section'; import { SectionHeading } from '../ui/SectionHeading';
+const categories: SkillCategory[] = ['Frontend', 'Backend', 'Databases', 'Tools'];
+export function Skills() { if (!skills.length) return null; return <Section id="skills"><SectionHeading eyebrow="02 / Skills" title="A practical toolkit for full-stack development." description="Technologies I use to turn product ideas into dependable, responsive applications." /><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{categories.map((category) => { const entries = skills.filter((skill) => skill.category === category); return entries.length ? <Card key={category} className="p-6"><h3 className="mb-5 text-sm font-semibold uppercase tracking-[.16em] text-accent-300">{category}</h3><div className="flex flex-wrap gap-2">{entries.map((skill) => <Badge key={skill.id}>{skill.name}</Badge>)}</div></Card> : null; })}</div></Section>; }
