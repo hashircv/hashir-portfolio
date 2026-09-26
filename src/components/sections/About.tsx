@@ -1,5 +1,59 @@
-import { Code2, Layers3, Smartphone } from 'lucide-react';
-import { profile } from '../../data/profile';
-import { Card } from '../ui/Card'; import { Section } from '../ui/Section'; import { SectionHeading } from '../ui/SectionHeading';
-const principles = [{ icon: Code2, title: 'Clean engineering', text: 'Clear, maintainable foundations that stay easy to evolve.' }, { icon: Smartphone, title: 'Responsive by default', text: 'Thoughtful experiences from the smallest screen upward.' }, { icon: Layers3, title: 'Built to scale', text: 'Reusable patterns for products that need room to grow.' }];
-export function About() { return <Section id="about"><SectionHeading eyebrow="01 / About" title="Thoughtful software, built around real needs." /><div className="grid gap-5 lg:grid-cols-[1.1fr_.9fr]"><Card className="flex min-h-72 items-end p-6 sm:p-9"><div><p className="max-w-xl text-xl leading-9 text-slate-200 sm:text-2xl">{profile.bio}</p>{profile.eyebrow && <p className="mt-6 text-sm font-medium text-accent-300">{profile.eyebrow}</p>}</div></Card><div className="grid gap-4">{principles.map(({ icon: Icon, title, text }) => <Card key={title} className="flex items-start gap-4 p-5 sm:p-6"><div className="grid size-11 shrink-0 place-items-center rounded-2xl bg-accent-400/10 text-accent-300"><Icon size={20} /></div><div><h3 className="font-semibold text-white">{title}</h3><p className="mt-1 text-sm leading-6 text-slate-400">{text}</p></div></Card>)}</div></div></Section>; }
+import { Code2, Layers3, Smartphone } from "lucide-react";
+import { profile } from "../../data/profile";
+import { Card } from "../ui/Card";
+import { Section } from "../ui/Section";
+import { SectionHeading } from "../ui/SectionHeading";
+const principles = [
+  {
+    icon: Code2,
+    title: "Clean engineering",
+    text: "Clear, maintainable foundations that stay easy to evolve.",
+  },
+  {
+    icon: Smartphone,
+    title: "Responsive by default",
+    text: "Thoughtful experiences from the smallest screen upward.",
+  },
+  {
+    icon: Layers3,
+    title: "Built to scale",
+    text: "Reusable patterns for products that need room to grow.",
+  },
+];
+export function About() {
+  return (
+    <Section id="about">
+      <SectionHeading
+        eyebrow="01 / About"
+        title="Thoughtful software, built around real needs."
+      />
+      <div className="grid gap-5 lg:grid-cols-[1.1fr_.9fr]">
+        <Card className="flex min-h-72 items-end p-6 sm:p-9">
+          <div>
+            <p className="max-w-xl text-xl leading-9 text-slate-200 sm:text-2xl">
+              {profile.bio}
+            </p>
+            {profile.eyebrow && (
+              <p className="mt-6 text-sm font-medium text-accent-300">
+                {profile.eyebrow}
+              </p>
+            )}
+          </div>
+        </Card>
+        <div className="grid gap-4">
+          {principles.map(({ icon: Icon, title, text }) => (
+            <Card key={title} className="flex items-start gap-4 p-5 sm:p-6">
+              <div className="grid size-11 shrink-0 place-items-center rounded-2xl bg-accent-400/10 text-accent-300">
+                <Icon size={20} />
+              </div>
+              <div>
+                <h3 className="font-semibold text-white">{title}</h3>
+                <p className="mt-1 text-sm leading-6 text-slate-400">{text}</p>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+}

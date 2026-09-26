@@ -9,6 +9,8 @@ export const profile: Profile = {
   bio: 'I am a software developer focused on creating clear, responsive, and scalable web experiences with modern JavaScript technologies.',
   location: '',
   email: 'hashircv917@gmail.com',
-  resumeUrl: '',
+  resumeUrl: '/mohammed-hashir-resume.pdf',
+  imageUrl: '/mohammed-hashir-portrait.png',
+  imageAlt: 'Mohammed Hashir C V, Software Developer',
   availability: 'Open to software development opportunities'
 };

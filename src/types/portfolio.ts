@@ -8,6 +8,8 @@ export interface Profile {
   location: string;
   email: string;
   resumeUrl: string;
+  imageUrl: string;
+  imageAlt: string;
   availability: string;
 }
 
