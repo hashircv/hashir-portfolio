@@ -1,4 +1,4 @@
-import type { Education } from '../types/portfolio';
+import type { Education } from '../types';
 
 export const education: Education[] = [{
   id: 'btech-it',

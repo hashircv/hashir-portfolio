@@ -1,4 +1,4 @@
-import type { NavItem, SectionConfig } from '../types/portfolio';
+import type { NavItem, SectionConfig } from '../types';
 
 export const sectionConfig: SectionConfig = { about: true, skills: true, experience: true, projects: true, education: true, certifications: false, contact: true };
 export const navigation: NavItem[] = [

@@ -1,4 +1,4 @@
-import type { Project } from '../types/portfolio';
+import type { Project } from '../types';
 
 export const projects: Project[] = [
   { id: 'threadlux', title: 'ThreadLux eCommerce', description: 'A full-stack commerce experience with customer and administrative workflows.', technologies: ['React', 'Vite', 'Node.js', 'Express', 'PostgreSQL', 'Redux', 'Supabase'], features: ['Authentication', 'Product management', 'Shopping cart', 'Orders', 'Admin dashboard', 'Role-based admin functionality'], links: [{ id: 'client-app', label: 'Client App', url: 'https://threadlux-ecommerce-client.vercel.app/', type: 'live' }, { id: 'admin-app', label: 'Admin App', url: 'https://threadlux-ecommerce-admin-dashboard.vercel.app/', type: 'live' }], demoCredentials: [{ label: 'Admin demo', email: 'admin@example.com', password: 'Admin@123' }], featured: true },

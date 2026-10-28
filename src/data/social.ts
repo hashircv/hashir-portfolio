@@ -1,4 +1,4 @@
-import type { SocialLink } from '../types/portfolio';
+import type { SocialLink } from '../types';
 
 export const socialLinks: SocialLink[] = [
   { id: 'github', platform: 'github', label: 'GitHub', href: 'https://github.com/hashircv' },

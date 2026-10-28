@@ -1,3 +1,3 @@
-import type { Certification } from '../types/portfolio';
+import type { Certification } from '../types';
 
 export const certifications: Certification[] = [];
