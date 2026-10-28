@@ -54,7 +54,7 @@ export function Hero() {
               variants={reduce ? undefined : fadeUp}
               className="hidden lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:block"
             >
-              <div className="relative lg:-top-16 lg:-translate-x-16">
+              <div className="relative lg:-top-32 lg:-translate-x-16">
                 <HeroPortrait />
               </div>
             </motion.div>
